@@ -1,0 +1,55 @@
+{
+  "generator": "tools/plot_results.py",
+  "matplotlib_version": "3.10.9",
+  "source_sha256": {
+    "results/results.json": "5a119b9dce65c387e585f9f4a13ebc10927788851e2e84d1f911f712a1ef0a98",
+    "results/episodes.json": "ba6eed0654864d8af9bcfd742edf4f9c4d4f422104527cdebcb63c42c3b626e3",
+    "results/checkpoints/checkpoint-001/audit.json": "ecad7a7c708673e22aa398151b6ba88f2fb8cb21bd77ea7d975000e8e0ca94c2",
+    "results/checkpoints/checkpoint-002/audit.json": "4578bacc185d354ad12d590d7e0bef9f284425346be4b823f2aa801b17822161",
+    "results/checkpoints/checkpoint-003/audit.json": "7b81ffebad7cb1026cb67ec61a96062bd2c5d8c7e3c91f47ab8fb29a88bb4a50",
+    "results/checkpoints/checkpoint-004/audit.json": "8b70cdd10690c1978e71f9764aec701c4eb53eadf5450599b0ece458c26b2e26",
+    "results/checkpoints/checkpoint-005/audit.json": "6386e9651e89b58200fbf540d8f8b09bd6f99d6883e10de57aa32e72123f0a8b",
+    "results/checkpoints/checkpoint-006/audit.json": "abe34c5cf6016a86bea5f0c2b180e8a498ce293de8909c0b812a1eeecb2754b0",
+    "results/checkpoints/checkpoint-007/audit.json": "f2b3e94a13d9d316f19a21d92675950c4225c74bc2bdb6943be158465cea6c69"
+  },
+  "figures": [
+    "evaluation",
+    "training",
+    "per_task"
+  ],
+  "formats": [
+    "svg",
+    "png"
+  ],
+  "new_samples_generated": false,
+  "training_data_exported": false,
+  "data": {
+    "steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reflection_loss": [
+      0.9349397188052535,
+      0.9070664625614882,
+      0.8478922890499234,
+      0.8254553563892841,
+      0.7827437524683774,
+      0.6735154814086854,
+      0.630087754689157
+    ],
+    "cumulative_backward_tokens": [
+      36749,
+      73941,
+      111607,
+      147498,
+      185232,
+      224262,
+      256721
+    ]
+  }
+}

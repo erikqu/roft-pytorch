@@ -37,6 +37,19 @@ Both arms used fresh inference on the same frozen 34 episodes, prompts, seeds, b
 
 **Both intervals include zero.** Absolute rewards are low; this small run does not establish reliable improvement or the paper's training-time advantage. Rewards are continuous outputs of the actual Blender verifiers, not coding pass rates. Earlier GRPO results are historical and are not substituted for a fresh arm.
 
+![Mean Blender verifier reward for fresh base and ROFT arms, with paired 95% task-cluster confidence intervals crossing zero.](assets/figures/evaluation.svg)
+
+![Fresh-batch reflection loss and cumulative backward-token count across seven updates. Falling training loss does not establish higher task reward.](assets/figures/training.svg)
+
+<details>
+<summary>View changes for every evaluation task</summary>
+
+![Mean paired verifier-reward changes for all six transfer and ten within-task tasks, including gains and regressions.](assets/figures/per_task.svg)
+
+</details>
+
+Figures use the published numeric records only. [SVG and PNG downloads](assets/figures/) and [the plotting script](tools/plot_results.py) are included; regenerate with `python3 tools/plot_results.py` after installing `requirements-dev.txt`.
+
 [Results and limitations](docs/RESULTS_REVIEW.md) · [Per-task results](docs/PER_TASK_RESULTS.md) · [Paper comparison](docs/METHODOLOGY_COMPARISON.md)
 
 ## Code and usage
@@ -73,3 +86,23 @@ The completed run passed all **17 combined audit requirements**. Full final weig
 [Full alignment](docs/METHODOLOGY_ALIGNMENT.md) · [Combined audit receipt](results/audits/current_goal_completion_audit.json) · [Current raw-byte receipt](results/audits/local_raw_storage_audit.json) · [Export provenance](results/public_export.json)
 
 Public copies replace operational host paths and cloud identifiers with placeholders and use environment-based credential/transport settings. The original frozen experiment files remain unchanged; original source hashes are recorded in the export manifest. Local code is MIT-licensed; imported author reference and paper assets retain their own notices.
+
+
+## Paper citation
+
+Jonathan Light, Christopher Zhang Cui, Jeonghye Kim, Roger Creus Castanyer, Emiliano Penaloza, Zhengyan Shi, Alessandro Sordoni, Marc-Alexandre Côté, Xingdi Yuan, and Minseon Kim. **Shockingly Simple Self-retrospection Improves Agentic Models Without RL.** arXiv:2609.35741v1, 2026. [Read the paper](https://arxiv.org/abs/2609.35741v1).
+
+This repository implements and adapts the paper's method; its Blender results are a separate local experiment. Please credit the original authors when using the method. [BibTeX citation](CITATION.bib):
+
+```bibtex
+@misc{light2026selfretrospection,
+  title         = {Shockingly Simple Self-retrospection Improves Agentic Models Without RL},
+  author        = {Jonathan Light and Christopher Zhang Cui and Jeonghye Kim and Roger Creus Castanyer and Emiliano Penaloza and Zhengyan Shi and Alessandro Sordoni and Marc-Alexandre C{\^o}t{\'e} and Xingdi Yuan and Minseon Kim},
+  year          = {2026},
+  eprint        = {2609.35741},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2609.35741v1},
+  note          = {Version 1}
+}
+```

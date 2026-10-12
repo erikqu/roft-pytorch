@@ -1,1 +1,2 @@
-# Lightweight CPU methodology tests additionally use the runtime torch install.
+# Optional dependencies for regenerating README figures.
+matplotlib==3.10.9
