@@ -1,0 +1,20 @@
+{
+  "at": 1791572625.908732,
+  "requested_url": "https://arxiv.org/pdf/2609.35741v1",
+  "response_url": "https://arxiv.org/src/2609.35741v1",
+  "headers": {
+    "Content-Length": "930993",
+    "last-modified": "Tue, 29 Sep 2026 04:32:46 GMT",
+    "etag": "CLj2meX6kpcDEAI=",
+    "content-type": "application/pdf"
+  },
+  "sha256": "98becce8a0dcba19a0175ea13dda9a856997e29762e0eacc1ef30c7b10acc328",
+  "matches_arxiv_mcp_cached_pdf": true,
+  "bytes": 930993,
+  "explicit_v1_download_succeeded": true,
+  "source_requested_url": "https://arxiv.org/src/2609.35741v1",
+  "source_sha256": "fa47e6ba3d7cfb549e760cea331b4242f3a886ffe6a124955d03dc4dce415d8e",
+  "source_explicit_v1_download_succeeded": true,
+  "source_setup_sha256": "c799c5da5a650023fb37b8421eaac99fed58ff511c4181342b51aea9eb79b7a8",
+  "matches_mcp_cached_setup": true
+}

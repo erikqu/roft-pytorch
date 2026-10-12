@@ -1,0 +1,442 @@
+{
+  "arms": {
+    "roft": {
+      "provenance": "fresh inference",
+      "expected_episodes": 34,
+      "actual_candidate_episodes": 34,
+      "actual_verifier_results": 34,
+      "completion_receipt": true,
+      "missing_verifier_results": [],
+      "full_set_present": true,
+      "actual_rewards": [
+        {
+          "id": "evaluation-roft-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-clock-tower-model-seed-71",
+          "reward": 0.005747,
+          "termination": "finished",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-cowboy-character-model-seed-71",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-17",
+          "reward": 0.030973,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-29",
+          "reward": 0.02763,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-53",
+          "reward": 0.022222,
+          "termination": "context_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-fictional-face-soft-features-model-seed-71",
+          "reward": 0.017306,
+          "termination": "context_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-gazebo-model-seed-17",
+          "reward": 0.072861,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-gazebo-model-seed-29",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-gazebo-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-gazebo-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-greenhouse-model-seed-17",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-greenhouse-model-seed-29",
+          "reward": 0.023892,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-greenhouse-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-greenhouse-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-17",
+          "reward": 0.0,
+          "termination": "finished",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-29",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-17",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-29",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-41",
+          "reward": 0.023684,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-53",
+          "reward": 0.0,
+          "termination": "finished",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-pagoda-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+          "reward": 0.015474,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-right-hand-open-palm-model-seed-71",
+          "reward": 0.02584,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-17",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-29",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-53",
+          "reward": 0.078062,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+          "reward": 0.035613,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        },
+        {
+          "id": "evaluation-roft-blender-generated-white-house-complete-exterior-model-seed-71",
+          "reward": 0.017877,
+          "termination": "turn_limit",
+          "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+        }
+      ]
+    },
+    "base": {
+      "provenance": "fresh inference",
+      "expected_episodes": 34,
+      "actual_candidate_episodes": 34,
+      "actual_verifier_results": 34,
+      "completion_receipt": true,
+      "missing_verifier_results": [],
+      "full_set_present": true,
+      "actual_rewards": [
+        {
+          "id": "evaluation-base-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-clock-tower-model-seed-71",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-cowboy-character-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-17",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-29",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-41",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-53",
+          "reward": 0.032642,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-fictional-face-soft-features-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-gazebo-model-seed-17",
+          "reward": 0.0,
+          "termination": "finished",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-gazebo-model-seed-29",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-gazebo-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-gazebo-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-greenhouse-model-seed-17",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-greenhouse-model-seed-29",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-greenhouse-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-greenhouse-model-seed-53",
+          "reward": 0.020879,
+          "termination": "finished",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-17",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-29",
+          "reward": 0.0,
+          "termination": "context_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-17",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-29",
+          "reward": 0.011532,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-41",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-pagoda-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-right-hand-open-palm-model-seed-71",
+          "reward": 0.013945,
+          "termination": "finished",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-17",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-29",
+          "reward": 0.016326,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-41",
+          "reward": 0.081355,
+          "termination": "finished",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-53",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+          "reward": 0.0,
+          "termination": "turn_limit",
+          "checkpoint_identity": null
+        },
+        {
+          "id": "evaluation-base-blender-generated-white-house-complete-exterior-model-seed-71",
+          "reward": 0.061571,
+          "termination": "context_limit",
+          "checkpoint_identity": null
+        }
+      ]
+    }
+  },
+  "problems": [],
+  "paired_full_set_verified": true,
+  "frozen_membership_size_per_arm": 34,
+  "paired_initial_prompt_hashes_matched": 34,
+  "pregrading_raw_turn_seed_context_prompt_image_and_response_digests_checked": true,
+  "read_only": true,
+  "historical_scores_substituted": false,
+  "at": 1791827160.2127326
+}

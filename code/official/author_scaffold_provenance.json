@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/xingdi-eric-yuan/mini-swe-agent/a9b635ab0f79b52e9354e676f5a90a534d4c6afa/src/minisweagent/agents/default.py",
+  "commit": "a9b635ab0f79b52e9354e676f5a90a534d4c6afa",
+  "path": "src/minisweagent/agents/default.py",
+  "sha256": "5bb2ef582aacdb653c9d5104853083c5af289347c73687ce6625587d59ae1d1a",
+  "official_roft_trainer": false,
+  "purpose": "Reference author-owned generic agent loop; no evidence this is the ROFT implementation",
+  "imported_at": 1791598797.2948167
+}

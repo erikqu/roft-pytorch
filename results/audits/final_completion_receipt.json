@@ -1,0 +1,19 @@
+{
+  "at": 1791830114.0343106,
+  "all_requirements_verified": true,
+  "combined_audit_at": 1791830033.6942942,
+  "node_rechecked_after_audit": {
+    "at": 1791830114.0114655,
+    "state": "active",
+    "instance_id": "REDACTED",
+    "automatic_shutdown": false,
+    "still_billable": true,
+    "reason": "Explicit user instruction; read-only check during final backups"
+  },
+  "backward_tokens": 256721,
+  "updates": 7,
+  "fresh_actual_evaluation_episodes_per_arm": 34,
+  "full_state_and_raw_current_hashes_verified": true,
+  "node_shutdown": false,
+  "deadline_unix": 1791831960.0
+}

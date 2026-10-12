@@ -1,0 +1,131 @@
+{
+  "protocol_sha256": "a6bda7fd4b8ce878a407ddff6c2db639b5a6d27706a52657a1b124c83484f574",
+  "model": "Qwen/Qwen3.5-4B",
+  "implementation_provenance": "paper-derived local trainer; no official ROFT trainer found",
+  "arms": {
+    "base": {
+      "provenance": "fresh inference",
+      "scores": {
+        "transfer": {
+          "mean_reward": 0.006780583333333333,
+          "n": 24,
+          "actual_verifier_results": true
+        },
+        "within_task": {
+          "mean_reward": 0.0075516,
+          "n": 10,
+          "actual_verifier_results": true
+        }
+      },
+      "episodes": [
+        "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-17",
+        "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-29",
+        "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-41",
+        "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-53",
+        "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-17",
+        "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-29",
+        "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-41",
+        "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-53",
+        "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-17",
+        "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-29",
+        "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-41",
+        "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-53",
+        "evaluation-base-blender-generated-gazebo-model-seed-17",
+        "evaluation-base-blender-generated-gazebo-model-seed-29",
+        "evaluation-base-blender-generated-gazebo-model-seed-41",
+        "evaluation-base-blender-generated-gazebo-model-seed-53",
+        "evaluation-base-blender-generated-greenhouse-model-seed-17",
+        "evaluation-base-blender-generated-greenhouse-model-seed-29",
+        "evaluation-base-blender-generated-greenhouse-model-seed-41",
+        "evaluation-base-blender-generated-greenhouse-model-seed-53",
+        "evaluation-base-blender-generated-stone-gatehouse-model-seed-17",
+        "evaluation-base-blender-generated-stone-gatehouse-model-seed-29",
+        "evaluation-base-blender-generated-stone-gatehouse-model-seed-41",
+        "evaluation-base-blender-generated-stone-gatehouse-model-seed-53",
+        "evaluation-base-blender-generated-cowboy-character-model-seed-71",
+        "evaluation-base-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+        "evaluation-base-blender-generated-fictional-face-soft-features-model-seed-71",
+        "evaluation-base-blender-generated-right-hand-open-palm-model-seed-71",
+        "evaluation-base-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+        "evaluation-base-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+        "evaluation-base-blender-generated-white-house-complete-exterior-model-seed-71",
+        "evaluation-base-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+        "evaluation-base-blender-generated-clock-tower-model-seed-71",
+        "evaluation-base-blender-generated-pagoda-model-seed-71"
+      ],
+      "backward_tokens": 0
+    },
+    "roft": {
+      "provenance": "fresh inference",
+      "scores": {
+        "transfer": {
+          "mean_reward": 0.011638500000000001,
+          "n": 24,
+          "actual_verifier_results": true
+        },
+        "within_task": {
+          "mean_reward": 0.0117857,
+          "n": 10,
+          "actual_verifier_results": true
+        }
+      },
+      "episodes": [
+        "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-17",
+        "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-29",
+        "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-41",
+        "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-53",
+        "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-17",
+        "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-29",
+        "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-41",
+        "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-53",
+        "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-17",
+        "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-29",
+        "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-41",
+        "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-53",
+        "evaluation-roft-blender-generated-gazebo-model-seed-17",
+        "evaluation-roft-blender-generated-gazebo-model-seed-29",
+        "evaluation-roft-blender-generated-gazebo-model-seed-41",
+        "evaluation-roft-blender-generated-gazebo-model-seed-53",
+        "evaluation-roft-blender-generated-greenhouse-model-seed-17",
+        "evaluation-roft-blender-generated-greenhouse-model-seed-29",
+        "evaluation-roft-blender-generated-greenhouse-model-seed-41",
+        "evaluation-roft-blender-generated-greenhouse-model-seed-53",
+        "evaluation-roft-blender-generated-stone-gatehouse-model-seed-17",
+        "evaluation-roft-blender-generated-stone-gatehouse-model-seed-29",
+        "evaluation-roft-blender-generated-stone-gatehouse-model-seed-41",
+        "evaluation-roft-blender-generated-stone-gatehouse-model-seed-53",
+        "evaluation-roft-blender-generated-cowboy-character-model-seed-71",
+        "evaluation-roft-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+        "evaluation-roft-blender-generated-fictional-face-soft-features-model-seed-71",
+        "evaluation-roft-blender-generated-right-hand-open-palm-model-seed-71",
+        "evaluation-roft-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+        "evaluation-roft-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+        "evaluation-roft-blender-generated-white-house-complete-exterior-model-seed-71",
+        "evaluation-roft-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+        "evaluation-roft-blender-generated-clock-tower-model-seed-71",
+        "evaluation-roft-blender-generated-pagoda-model-seed-71"
+      ],
+      "backward_tokens": 256721
+    }
+  },
+  "deltas": {
+    "roft_minus_base_transfer": {
+      "mean_reward_delta": 0.004857916666666667,
+      "ci95_task_bootstrap": [
+        -0.0009333749999999989,
+        0.011366333333333332
+      ],
+      "paired_fixes": 6,
+      "paired_regressions": 5
+    },
+    "roft_minus_base_within_task": {
+      "mean_reward_delta": 0.0042341,
+      "ci95_task_bootstrap": [
+        -0.008823899999999999,
+        0.0150513
+      ],
+      "paired_fixes": 5,
+      "paired_regressions": 1
+    }
+  }
+}

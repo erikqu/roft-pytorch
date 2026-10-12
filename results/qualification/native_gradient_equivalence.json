@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "relative_l2": 0.019254079292424182,
+  "max_abs_error": 1.5,
+  "actual_full_qwen_model": true,
+  "actual_public_images": true,
+  "microbatches": 2,
+  "diagnostic_backward_tokens": 78,
+  "optimizer_updates": 0,
+  "native_leaf_gradient_dtype": "float32",
+  "parameter_gradients_compared": 723,
+  "not_counted_toward_training_budget": true,
+  "relative_l2_floor": 0.01,
+  "measured_native_repeatability_relative_l2": 0.01933974627658163,
+  "criterion": "candidate/native discrepancy <= max(1%,1.1 times measured native/native discrepancy)",
+  "precision_note": "Native backward before FP32 accumulation retains tied-parameter accumulation semantics"
+}

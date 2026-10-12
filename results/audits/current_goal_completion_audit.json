@@ -1,0 +1,1367 @@
+{
+  "requirements": [
+    {
+      "requirement": "Actual full-model native FP32 gradient and131072sequence qualification",
+      "verified": true,
+      "evidence": {
+        "native": {
+          "passed": true,
+          "relative_l2": 0.019254079292424182,
+          "max_abs_error": 1.5,
+          "actual_full_qwen_model": true,
+          "actual_public_images": true,
+          "microbatches": 2,
+          "diagnostic_backward_tokens": 78,
+          "optimizer_updates": 0,
+          "native_leaf_gradient_dtype": "float32",
+          "parameter_gradients_compared": 723,
+          "not_counted_toward_training_budget": true,
+          "relative_l2_floor": 0.01,
+          "measured_native_repeatability_relative_l2": 0.01933974627658163,
+          "criterion": "candidate/native discrepancy <= max(1%,1.1 times measured native/native discrepancy)",
+          "precision_note": "Native backward before FP32 accumulation retains tied-parameter accumulation semantics"
+        },
+        "maximum_sequence": {
+          "passed": true,
+          "sequence_tokens": 131072,
+          "actual_full_model_backward": true,
+          "diagnostic_backward_tokens": 16,
+          "optimizer_updates": 0,
+          "native_leaf_gradient_dtype": "float32",
+          "gradient_norm": 23.835257938090596,
+          "gradient_tensors": 723,
+          "seconds": 71.59117829601746,
+          "peak_gpu_bytes": 79070877184,
+          "not_counted_toward_training_budget": true
+        }
+      }
+    },
+    {
+      "requirement": "Native tools/readableBlender/freshreflection/matching sampled-prefix qualification",
+      "verified": true,
+      "evidence": {
+        "passed": true,
+        "actual_native_tool_execution": true,
+        "actual_readable_blender_scene": true,
+        "fresh_thinking_reflection": true,
+        "sampled_prefix_exact": true,
+        "all_target_thinking_eot_supervised": true,
+        "reflection_target_tokens": 608
+      }
+    },
+    {
+      "requirement": "Paper mismatch table and explicit remaining adaptations exist",
+      "verified": true,
+      "evidence": [
+        "METHODOLOGY_ALIGNMENT.md",
+        "../roft_blender_paper_aligned_v4/METHODOLOGY_AUDIT_20261012.md"
+      ]
+    },
+    {
+      "requirement": "Exactly256721actualbackwardtokens in verified numerical updates",
+      "verified": true,
+      "evidence": {
+        "scope": "full saved ROFT update chain currently present",
+        "steps": [
+          {
+            "step": 1,
+            "backward_tokens": 36749,
+            "cumulative_backward_tokens": 36749,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 64,
+            "boundary_target": [],
+            "checkpoint_identity": "2a64097eefcf78f559122ae5fd5774b76c3a66a8879e787bd7aa908539b6f561",
+            "source_checkpoint_identity": null,
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          },
+          {
+            "step": 2,
+            "backward_tokens": 37192,
+            "cumulative_backward_tokens": 73941,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 64,
+            "boundary_target": [],
+            "checkpoint_identity": "8e8254146f9920b80785ddf3f28a316b7532fc6af9e160c47d0aab2d469f8575",
+            "source_checkpoint_identity": "2a64097eefcf78f559122ae5fd5774b76c3a66a8879e787bd7aa908539b6f561",
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          },
+          {
+            "step": 3,
+            "backward_tokens": 37666,
+            "cumulative_backward_tokens": 111607,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 64,
+            "boundary_target": [],
+            "checkpoint_identity": "871c9fc9ea5ec7719c58c5d6405ca3041ebf2199d8de8467ac958e9e7c703ca2",
+            "source_checkpoint_identity": "8e8254146f9920b80785ddf3f28a316b7532fc6af9e160c47d0aab2d469f8575",
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          },
+          {
+            "step": 4,
+            "backward_tokens": 35891,
+            "cumulative_backward_tokens": 147498,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 64,
+            "boundary_target": [],
+            "checkpoint_identity": "20338e624d65337dd0a5aa4d55c6a0ad01352585aa7bf6f403d441261ae28cec",
+            "source_checkpoint_identity": "871c9fc9ea5ec7719c58c5d6405ca3041ebf2199d8de8467ac958e9e7c703ca2",
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          },
+          {
+            "step": 5,
+            "backward_tokens": 37734,
+            "cumulative_backward_tokens": 185232,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 64,
+            "boundary_target": [],
+            "checkpoint_identity": "12c7233db766162018ca3ac00b89b15d6386c4e25d626fb5b70fe0363e8c5d8d",
+            "source_checkpoint_identity": "20338e624d65337dd0a5aa4d55c6a0ad01352585aa7bf6f403d441261ae28cec",
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          },
+          {
+            "step": 6,
+            "backward_tokens": 39030,
+            "cumulative_backward_tokens": 224262,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 64,
+            "boundary_target": [],
+            "checkpoint_identity": "55c1b3deb25f5857383aa8166feb5bd12549b6be1907240725bafd17ab86b3e6",
+            "source_checkpoint_identity": "12c7233db766162018ca3ac00b89b15d6386c4e25d626fb5b70fe0363e8c5d8d",
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          },
+          {
+            "step": 7,
+            "backward_tokens": 32459,
+            "cumulative_backward_tokens": 256721,
+            "actual_changed_tensors": 723,
+            "fresh_source_attempts": 16,
+            "retained_target_count": 54,
+            "boundary_target": [
+              "roft-007-attempt-010-reflection-1"
+            ],
+            "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd",
+            "source_checkpoint_identity": "55c1b3deb25f5857383aa8166feb5bd12549b6be1907240725bafd17ab86b3e6",
+            "numerical_reload_verified": true,
+            "full_state": "not inspected in metadata-only audit"
+          }
+        ],
+        "backward_tokens": 256721,
+        "target_backward_tokens": 256721,
+        "training_complete_receipt": true,
+        "replayed_reflection_ids": false,
+        "problems": [],
+        "training_verified_complete": true,
+        "fresh_final_evaluation_complete": true,
+        "note": "This audit alone does not prove model quality, complete final backup, or entire goal completion."
+      }
+    },
+    {
+      "requirement": "Every selected target has exactly one completed native backward in the saved chain",
+      "verified": true,
+      "evidence": {
+        "scope": "all persisted native backward receipts reconciled with actual target IDs and saved update audits",
+        "steps": [
+          {
+            "step": 1,
+            "completed_backwards": 64,
+            "selected_targets": 64,
+            "actual_backward_tokens": 36749,
+            "selected_backward_tokens": 36749,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.9349397188052535
+          },
+          {
+            "step": 2,
+            "completed_backwards": 64,
+            "selected_targets": 64,
+            "actual_backward_tokens": 37192,
+            "selected_backward_tokens": 37192,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.9070664625614882
+          },
+          {
+            "step": 3,
+            "completed_backwards": 64,
+            "selected_targets": 64,
+            "actual_backward_tokens": 37666,
+            "selected_backward_tokens": 37666,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.8478922890499234
+          },
+          {
+            "step": 4,
+            "completed_backwards": 64,
+            "selected_targets": 64,
+            "actual_backward_tokens": 35891,
+            "selected_backward_tokens": 35891,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.8254553563892841
+          },
+          {
+            "step": 5,
+            "completed_backwards": 64,
+            "selected_targets": 64,
+            "actual_backward_tokens": 37734,
+            "selected_backward_tokens": 37734,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.7827437524683774
+          },
+          {
+            "step": 6,
+            "completed_backwards": 64,
+            "selected_targets": 64,
+            "actual_backward_tokens": 39030,
+            "selected_backward_tokens": 39030,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.6735154814086854
+          },
+          {
+            "step": 7,
+            "completed_backwards": 54,
+            "selected_targets": 54,
+            "actual_backward_tokens": 32459,
+            "selected_backward_tokens": 32459,
+            "saved_numerical_update": true,
+            "actual_loss_contribution_sum": 0.630087754689157
+          }
+        ],
+        "saved_backward_tokens": 256721,
+        "pending_backward_tokens": 0,
+        "problems": [],
+        "verified": true,
+        "read_only": true,
+        "note": "An unfinished update remains pending; this audit alone does not prove gradients, optimizer states or final quality."
+      }
+    },
+    {
+      "requirement": "All currently saved full-parameter masters/Adam/RNG and serving weights audited",
+      "verified": true,
+      "evidence": [
+        {
+          "step": 1,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-001",
+            "step": 1,
+            "resume_sha256": "2050ec276d21737e642bf70b6904435f71e6a7131590aed89fd1e9a14b52723b",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              1
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 540,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight",
+              "model.language_model.layers.17.linear_attn.in_proj_a.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit."
+          }
+        },
+        {
+          "step": 2,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-002",
+            "step": 2,
+            "resume_sha256": "a2932bb923f20c92f5c9268fa20e1d7a013ffa1bd7c4fb4e685dbaa7a1338333",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              2
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 543,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+            "audited_at": 1791788692.566374
+          }
+        },
+        {
+          "step": 3,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-003",
+            "step": 3,
+            "resume_sha256": "2d526f684d3d68828f8a3c8858596401db1a5da854ec2dd6ffaf6ee10b187a3b",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              3
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 546,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+            "audited_at": 1791793028.6882083
+          }
+        },
+        {
+          "step": 4,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-004",
+            "step": 4,
+            "resume_sha256": "18ea6db2d1f8d410964f586ce4294c01c4dfbb727fe9c32039f82438b8a63599",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              4
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 548,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+            "audited_at": 1791798159.7039094
+          }
+        },
+        {
+          "step": 5,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-005",
+            "step": 5,
+            "resume_sha256": "0fde226a8d607ff911b451ca06d979b0b482dba6d8d3dab1bed4f8bceeac23d5",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              5
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 553,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+            "audited_at": 1791804182.2398136
+          }
+        },
+        {
+          "step": 6,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-006",
+            "step": 6,
+            "resume_sha256": "4bc5e994bd958910a2498da8eeac4c228c792e795776cb331a6583406a7c0dcd",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              6
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 557,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+            "audited_at": 1791810217.3393018
+          }
+        },
+        {
+          "step": 7,
+          "receipt": {
+            "checkpoint": "/ROFT_RUN/train/roft/checkpoint-007",
+            "step": 7,
+            "resume_sha256": "9799e27d81765e8aa65bb8899e19e9c22a11c41cc002f0c783b64e4003886a62",
+            "saved_master_tensors": 723,
+            "saved_master_parameters": 4539265536,
+            "master_dtype": "FP32",
+            "adam_moment_tensors": 723,
+            "adam_step_counters": [
+              7
+            ],
+            "cpu_cuda_rng_valid": true,
+            "saved_adam_recipe": {
+              "lr": 1e-06,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "maximize": false,
+              "foreach": false
+            },
+            "serving_master_tensors_compared": 723,
+            "masters_with_precision_beyond_serving_export": 723,
+            "unrounded_master_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.A_log"
+            ],
+            "base_serving_model": "/ROFT_MODEL",
+            "numerically_changed_serving_tensors_from_base": 558,
+            "serving_change_examples": [
+              "model.language_model.layers.16.mlp.gate_proj.weight",
+              "model.language_model.layers.16.mlp.up_proj.weight",
+              "model.language_model.layers.16.post_attention_layernorm.weight",
+              "model.language_model.layers.17.input_layernorm.weight",
+              "model.language_model.layers.17.linear_attn.conv1d.weight"
+            ],
+            "problems": [],
+            "verified": true,
+            "read_only": true,
+            "optimizer_update_performed": false,
+            "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+            "audited_at": 1791814264.2548416
+          }
+        }
+      ]
+    },
+    {
+      "requirement": "All currently saved update cycles source/reflection/token evidence audited and backed up",
+      "verified": true,
+      "evidence": [
+        {
+          "step": 1,
+          "receipt": {
+            "at": 1791783908.739947,
+            "step": 1,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 36749,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        },
+        {
+          "step": 2,
+          "receipt": {
+            "at": 1791786571.1509192,
+            "step": 2,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 37192,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        },
+        {
+          "step": 3,
+          "receipt": {
+            "at": 1791790941.5903153,
+            "step": 3,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 37666,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        },
+        {
+          "step": 4,
+          "receipt": {
+            "at": 1791795979.0247355,
+            "step": 4,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 35891,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        },
+        {
+          "step": 5,
+          "receipt": {
+            "at": 1791802026.8944793,
+            "step": 5,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 37734,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        },
+        {
+          "step": 6,
+          "receipt": {
+            "at": 1791808068.9525442,
+            "step": 6,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 39030,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        },
+        {
+          "step": 7,
+          "receipt": {
+            "at": 1791812287.1815398,
+            "step": 7,
+            "verified": true,
+            "original_sources": 16,
+            "fresh_reflections": 64,
+            "supervised_tokens_selected": 32459,
+            "complete_raw_backup_verified": true,
+            "optimizer_update_verified_by_this_receipt": false,
+            "read_only_training": true,
+            "automatic_shutdown": false
+          }
+        }
+      ]
+    },
+    {
+      "requirement": "Fresh34episodeROFT and34episodebase evaluation with frozen actualverifiers",
+      "verified": true,
+      "evidence": {
+        "arms": {
+          "roft": {
+            "provenance": "fresh inference",
+            "expected_episodes": 34,
+            "actual_candidate_episodes": 34,
+            "actual_verifier_results": 34,
+            "completion_receipt": true,
+            "missing_verifier_results": [],
+            "full_set_present": true,
+            "actual_rewards": [
+              {
+                "id": "evaluation-roft-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-clock-tower-model-seed-71",
+                "reward": 0.005747,
+                "termination": "finished",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-cowboy-character-model-seed-71",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-17",
+                "reward": 0.030973,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-29",
+                "reward": 0.02763,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-fictional-face-angular-features-model-seed-53",
+                "reward": 0.022222,
+                "termination": "context_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-fictional-face-soft-features-model-seed-71",
+                "reward": 0.017306,
+                "termination": "context_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-gazebo-model-seed-17",
+                "reward": 0.072861,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-gazebo-model-seed-29",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-gazebo-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-gazebo-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-greenhouse-model-seed-17",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-greenhouse-model-seed-29",
+                "reward": 0.023892,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-greenhouse-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-greenhouse-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-17",
+                "reward": 0.0,
+                "termination": "finished",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-29",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-foot-raised-heel-pose-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-17",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-29",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-41",
+                "reward": 0.023684,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-left-hand-relaxed-fingers-model-seed-53",
+                "reward": 0.0,
+                "termination": "finished",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-pagoda-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+                "reward": 0.015474,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-right-hand-open-palm-model-seed-71",
+                "reward": 0.02584,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-17",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-29",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-stone-gatehouse-model-seed-53",
+                "reward": 0.078062,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+                "reward": 0.035613,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              },
+              {
+                "id": "evaluation-roft-blender-generated-white-house-complete-exterior-model-seed-71",
+                "reward": 0.017877,
+                "termination": "turn_limit",
+                "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd"
+              }
+            ]
+          },
+          "base": {
+            "provenance": "fresh inference",
+            "expected_episodes": 34,
+            "actual_candidate_episodes": 34,
+            "actual_verifier_results": 34,
+            "completion_receipt": true,
+            "missing_verifier_results": [],
+            "full_set_present": true,
+            "actual_rewards": [
+              {
+                "id": "evaluation-base-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-clock-tower-model-seed-71",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-cowboy-character-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-17",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-29",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-41",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-fictional-face-angular-features-model-seed-53",
+                "reward": 0.032642,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-fictional-face-soft-features-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-gazebo-model-seed-17",
+                "reward": 0.0,
+                "termination": "finished",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-gazebo-model-seed-29",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-gazebo-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-gazebo-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-greenhouse-model-seed-17",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-greenhouse-model-seed-29",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-greenhouse-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-greenhouse-model-seed-53",
+                "reward": 0.020879,
+                "termination": "finished",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-17",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-29",
+                "reward": 0.0,
+                "termination": "context_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-foot-raised-heel-pose-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-17",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-29",
+                "reward": 0.011532,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-41",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-left-hand-relaxed-fingers-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-pagoda-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-right-hand-open-palm-model-seed-71",
+                "reward": 0.013945,
+                "termination": "finished",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-17",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-29",
+                "reward": 0.016326,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-41",
+                "reward": 0.081355,
+                "termination": "finished",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-stone-gatehouse-model-seed-53",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+                "reward": 0.0,
+                "termination": "turn_limit",
+                "checkpoint_identity": null
+              },
+              {
+                "id": "evaluation-base-blender-generated-white-house-complete-exterior-model-seed-71",
+                "reward": 0.061571,
+                "termination": "context_limit",
+                "checkpoint_identity": null
+              }
+            ]
+          }
+        },
+        "problems": [],
+        "paired_full_set_verified": true,
+        "frozen_membership_size_per_arm": 34,
+        "paired_initial_prompt_hashes_matched": 34,
+        "pregrading_raw_turn_seed_context_prompt_image_and_response_digests_checked": true,
+        "read_only": true,
+        "historical_scores_substituted": false
+      }
+    },
+    {
+      "requirement": "Complete final model/optimizer/RNG backed up off-node and hashverified",
+      "verified": true,
+      "evidence": {
+        "backup_receipt": {
+          "at": 1791829376.4714775,
+          "verified": true,
+          "checkpoint": "/ROFT_RUN/train/roft/checkpoint-007",
+          "weight_manifest_sha256": "5371ee78866d388de71a3007083db18205ebe6d1028542f1a00f181ba6599564",
+          "resume_sha256": "9799e27d81765e8aa65bb8899e19e9c22a11c41cc002f0c783b64e4003886a62",
+          "full_weights_optimizer_rng": true,
+          "actual_parallel_range_transfers": {
+            "model-00002-of-00002.safetensors": {
+              "verified": true,
+              "already_verified": true,
+              "bytes": 4105672464
+            },
+            "model-00001-of-00002.safetensors": {
+              "verified": true,
+              "already_verified": true,
+              "bytes": 4972947968
+            },
+            "resume.pt.gz": {
+              "verified": true,
+              "bytes": 50107198967,
+              "sha256": "9799e27d81765e8aa65bb8899e19e9c22a11c41cc002f0c783b64e4003886a62",
+              "ranges": 187,
+              "workers": 8,
+              "all_original_bytes_hashed": true
+            }
+          },
+          "automatic_shutdown": false
+        },
+        "current_bytes_audit": {
+          "at": 1791829450.3271458,
+          "verified": true,
+          "read_only": true,
+          "checkpoint": "/ROFT_RUN/train/roft/checkpoint-007",
+          "step": 7,
+          "current_file_hashes": {
+            "model-00002-of-00002.safetensors": "6638df40114d90630b055f2796d154657005d31f737cecf8b6adf049ac3a98f8",
+            "model-00001-of-00002.safetensors": "590883e3bc0b2622b242b45669d07b7dd79a245875f69541e46b20590a3f1742",
+            "resume.pt.gz": "9799e27d81765e8aa65bb8899e19e9c22a11c41cc002f0c783b64e4003886a62"
+          },
+          "full_weights_optimizer_rng": true,
+          "problems": [],
+          "all_model_shards_hashed": true,
+          "complete_state_bytes_hashed": true,
+          "master_adam_rng_parse_proof": "/ROFT_RUN/audits/optimizer_states/checkpoint-007.json",
+          "state_parse_proof_matched_by_full_bytes_sha256": true
+        }
+      }
+    },
+    {
+      "requirement": "Full run raw evidence backup verified",
+      "verified": true,
+      "evidence": {
+        "at": 1791827748.4543786,
+        "verified": true,
+        "files": 66896,
+        "missing_or_mismatched": []
+      }
+    },
+    {
+      "requirement": "Actual original raw bytes verified in current direct or reversible compressed local storage",
+      "verified": true,
+      "evidence": {
+        "at": 1791829541.6420214,
+        "scope": "all locally backed-up raw-cycle files and full-run manifest when present",
+        "cycle_receipts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "full_run_manifest_present": true,
+        "files": 66896,
+        "direct_files_checked": 45827,
+        "compressed_files_checked": 21069,
+        "uncompressed_bytes_checked": 56270127629,
+        "problems": [],
+        "verified": true,
+        "read_only": true,
+        "entire_run_complete_claimed": true
+      }
+    },
+    {
+      "requirement": "Worker completed exact training and all fresh evaluation arms",
+      "verified": true,
+      "evidence": {
+        "at": 1791827058.170409,
+        "token_equal_training": true,
+        "fresh_evaluation_all_arms": true,
+        "keep_node_running": true,
+        "automatic_shutdown": false,
+        "base_evaluation_resumed": true,
+        "training_repeated": false
+      }
+    },
+    {
+      "requirement": "Reported rewards/counts/paired deltas/intervals reconcile with complete fresh actual verifiers",
+      "verified": true,
+      "evidence": {
+        "at": 1791830033.0622082,
+        "verified": true,
+        "report_present": true,
+        "fresh_full_set_verified": true,
+        "actual_verifier_rows": {
+          "base": 34,
+          "roft": 34
+        },
+        "report_sha256": "5a119b9dce65c387e585f9f4a13ebc10927788851e2e84d1f911f712a1ef0a98",
+        "problems": [],
+        "read_only": true,
+        "historical_or_baseline_output_substitution": false
+      }
+    },
+    {
+      "requirement": "Node retention receipt says active and no automatic shutdown",
+      "verified": true,
+      "evidence": {
+        "at": 1791829541.9129004,
+        "state": "active",
+        "instance_id": "REDACTED",
+        "automatic_shutdown": false,
+        "reason": "Explicit user instruction; read-only post-backup inventory",
+        "still_billable": true
+      }
+    },
+    {
+      "requirement": "Original bounded workwindow preserved across repairs",
+      "verified": true,
+      "evidence": {
+        "started_unix": 1791777987.611464,
+        "deadline_unix": 1791831960.0,
+        "authorization": "User explicitly requested fixes and try again on the retained node",
+        "allocation_launch_unix": 1791505610.604207,
+        "keep_node_running": true,
+        "automatic_shutdown": false,
+        "rate_usd_hour": 3.29,
+        "original_deadline_unix": 1791821187.611464,
+        "extension_approved_at": 1791824455.61792,
+        "extension_authorization": "User replied yes to extending this run until 19:06 UTC on 2026-10-12"
+      }
+    },
+    {
+      "requirement": "Explicit approved extension retains original work/allocation clocks",
+      "verified": true,
+      "evidence": {
+        "original": {
+          "started_unix": 1791777987.611464,
+          "deadline_unix": 1791821187.611464,
+          "authorization": "User explicitly requested fixes and try again on the retained node",
+          "allocation_launch_unix": 1791505610.604207,
+          "keep_node_running": true,
+          "automatic_shutdown": false,
+          "rate_usd_hour": 3.29
+        },
+        "approved_extension": {
+          "at": 1791824455.61792,
+          "user_response": "yes",
+          "approved_deadline_utc": "2026-10-12 19:06 UTC",
+          "approved_deadline_unix": 1791831960.0,
+          "original_deadline_unix": 1791821187.611464,
+          "original_started_unix": 1791777987.611464,
+          "allocation_launch_unix": 1791505610.604207,
+          "original_work_window_sha256": "ed2ed3b88e0dcd85f1e1180eb7a026016e9d0304312ea221b7f2828f7c502eee",
+          "keep_node_running": true,
+          "automatic_shutdown": false,
+          "training_repeated": false
+        },
+        "current": {
+          "started_unix": 1791777987.611464,
+          "deadline_unix": 1791831960.0,
+          "authorization": "User explicitly requested fixes and try again on the retained node",
+          "allocation_launch_unix": 1791505610.604207,
+          "keep_node_running": true,
+          "automatic_shutdown": false,
+          "rate_usd_hour": 3.29,
+          "original_deadline_unix": 1791821187.611464,
+          "extension_approved_at": 1791824455.61792,
+          "extension_authorization": "User replied yes to extending this run until 19:06 UTC on 2026-10-12"
+        }
+      }
+    },
+    {
+      "requirement": "Original failed-update artifacts retained alongside repair evidence",
+      "verified": true,
+      "evidence": [
+        "failure-before-reload-recovery.json",
+        "train/roft/checkpoint-001/recovery_reload_receipt.json"
+      ]
+    }
+  ],
+  "all_requirements_verified": true,
+  "node_must_be_rechecked_live_before_goal_completion": true,
+  "note": "A positive receipt requires fresh live node verification and independent final artifact hash checks before marking the goal complete.",
+  "at": 1791830033.6942942
+}

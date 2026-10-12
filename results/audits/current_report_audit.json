@@ -1,0 +1,14 @@
+{
+  "at": 1791827455.0203917,
+  "verified": true,
+  "report_present": true,
+  "fresh_full_set_verified": true,
+  "actual_verifier_rows": {
+    "base": 34,
+    "roft": 34
+  },
+  "report_sha256": "5a119b9dce65c387e585f9f4a13ebc10927788851e2e84d1f911f712a1ef0a98",
+  "problems": [],
+  "read_only": true,
+  "historical_or_baseline_output_substitution": false
+}

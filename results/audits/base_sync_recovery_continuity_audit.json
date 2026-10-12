@@ -1,0 +1,54 @@
+{
+  "at": 1791826737.9795282,
+  "verified": true,
+  "original_raw_hashes_checked": 356,
+  "completed_candidate_hashes_checked": 27,
+  "first_new_turns": [
+    {
+      "id": "evaluation-base-blender-generated-astronaut-complete-standing-suit-model-seed-71",
+      "seed": 74000293,
+      "expected_seed": 74000293,
+      "verified": true
+    },
+    {
+      "id": "evaluation-base-blender-generated-right-foot-flat-resting-pose-model-seed-71",
+      "seed": 82000317,
+      "expected_seed": 82000317,
+      "verified": true
+    },
+    {
+      "id": "evaluation-base-blender-generated-suburban-ranch-house-complete-exterior-model-seed-71",
+      "seed": 51000224,
+      "expected_seed": 51000224,
+      "verified": true
+    },
+    {
+      "id": "evaluation-base-blender-generated-white-house-complete-exterior-model-seed-71",
+      "seed": 57000242,
+      "expected_seed": 57000242,
+      "verified": true
+    },
+    {
+      "id": "evaluation-base-blender-generated-skyscraper-exposed-platforms-and-pillars-model-seed-71",
+      "seed": 63000260,
+      "expected_seed": 63000260,
+      "verified": true
+    },
+    {
+      "id": "evaluation-base-blender-generated-clock-tower-model-seed-71",
+      "seed": 20000131,
+      "expected_seed": 20000131,
+      "verified": true
+    },
+    {
+      "id": "evaluation-base-blender-generated-pagoda-model-seed-71",
+      "seed": 9000098,
+      "expected_seed": 9000098,
+      "verified": true
+    }
+  ],
+  "problems": [],
+  "new_sampling_seeds_continuous": true,
+  "raw_tokens_replaced": false,
+  "action_reexecuted": false
+}

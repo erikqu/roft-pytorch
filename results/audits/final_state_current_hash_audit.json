@@ -1,0 +1,18 @@
+{
+  "at": 1791829450.3271458,
+  "verified": true,
+  "read_only": true,
+  "checkpoint": "/ROFT_RUN/train/roft/checkpoint-007",
+  "step": 7,
+  "current_file_hashes": {
+    "model-00002-of-00002.safetensors": "6638df40114d90630b055f2796d154657005d31f737cecf8b6adf049ac3a98f8",
+    "model-00001-of-00002.safetensors": "590883e3bc0b2622b242b45669d07b7dd79a245875f69541e46b20590a3f1742",
+    "resume.pt.gz": "9799e27d81765e8aa65bb8899e19e9c22a11c41cc002f0c783b64e4003886a62"
+  },
+  "full_weights_optimizer_rng": true,
+  "problems": [],
+  "all_model_shards_hashed": true,
+  "complete_state_bytes_hashed": true,
+  "master_adam_rng_parse_proof": "/ROFT_RUN/audits/optimizer_states/checkpoint-007.json",
+  "state_parse_proof_matched_by_full_bytes_sha256": true
+}

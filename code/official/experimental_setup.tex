@@ -1,0 +1,185 @@
+\section{Experimental Setup}
+\label{app:experimental_setup}
+
+This section describes the Qwen3.5-4B online training procedure for
+\methodabbr{}. Training budgets and experiment-specific changes are
+reported in \cref{app:generalization_efficiency,app:beyond_frontier_learning,app:behavioral_induction,app:ablations}.
+
+\subsection{Model, tasks, and agent environment}
+
+We initialize the policy from Qwen3.5-4B
+\citep{qwen2026qwen35fourb} and train on SWE-rebench-767, a fixed
+collection of 767 software-engineering tasks. Each task is executed in
+a repository-specific container. The
+agent can read, write, and edit files, search the repository, and execute
+shell commands. Its system instruction is:
+\begin{quote}\small
+You are a software-engineering agent working in a checked-out repository.
+Use the available tools to inspect files, make focused edits, and run commands.
+Solve the task, validate when practical, then give a brief final answer.
+\end{quote}
+The environment supplies the task description and evaluates the resulting
+patch. We allow at most 100 agent turns, 8,192 generated tokens per turn,
+and a context window of 131,072 tokens. Context compaction is disabled.
+The solver samples at temperature 1.0 with top-$p=1.0$.
+
+Task order is shuffled and the dataset is traversed cyclically, with
+reshuffling at each epoch. Because generation and environment execution
+are asynchronous, completion order also influences batch composition.
+
+\subsection{Retrospection generation and supervision}
+\label{app:retrospection_generation}
+
+After each attempted solution, the same policy generates four independent
+retrospections, conditioned on the same task, trajectory summary, patch,
+and test feedback. The default prompt used in these experiments requests
+a \emph{short paragraph without lists} that identifies a consequential
+assumption or decision, relates it to supporting or contradicting evidence, gives a correction when
+appropriate, and states concrete triggers for applying the lesson.
+It explicitly distinguishes the correctness of individual decisions
+from the overall verdict and asks the model to acknowledge insufficient
+evidence. The complete prompt and two generated examples are provided in
+\cref{app:retrospection_examples}.
+
+We sample retrospections at temperature 0.9 with top-$p=1.0$ and an
+8,192-token output limit. The short-paragraph instruction specifies this
+prompt's requested answer format, not the general form of retrospection,
+and does not exclude the model's preceding thinking from supervision.
+Both failed and successful attempts contribute
+targets, without reward weighting or a semantic-quality filter.
+
+The prompt reports the raw test outcome separately from reward adjustments
+and the reason for termination. An attempt that passes its tests but
+exhausts the turn budget therefore retains a passing test verdict;
+budget exhaustion is reported separately. If raw test feedback is
+unavailable, the verdict is marked unknown rather than inferred from
+the shaped reward.
+
+The no-verdict ablation removes the entire post-attempt verdict and
+test-feedback block from the retrospection prompt, rather than only
+the pass/fail label. Observations recorded during the task attempt
+remain available, including any test output already present in that
+trajectory.
+The faster-retrospection experiment instead retains the verdict and uses
+it to choose the instruction (\cref{app:faster_rollouts}).
+
+The retrospective context is constructed from a bounded rendering of
+the interaction, rather than the complete solver context.
+\Cref{tab:retrospection_context} lists the character budgets.
+For fields exceeding a budget, we retain the first two-thirds and last
+one-third, separated by a truncation marker. Thought, action, and
+observation fields are shortened independently before the trajectory-level
+budget is applied. The full prompt and target must also fit the
+131,072-token training sequence limit.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Character budgets for constructing the retrospection input.
+Budgets exclude inserted truncation markers and structural headings.}
+\label{tab:retrospection_context}
+\begin{tabularx}{0.85\linewidth}{@{}Xr@{}}
+\toprule
+Input component & Retained characters \\
+\midrule
+Task description & 4,000 \\
+Thought, action, or observation within each step & 600 each \\
+Concatenated trajectory summary & 24,000 \\
+Final patch & 2,000 \\
+Test output & 3,000 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+We discard generations that terminate at the output-length limit,
+empty or failed generations, and prompt--target pairs that exceed the
+training sequence limit. Preprocessing removes surrounding whitespace,
+trailing termination markers, and a leading empty thinking block, while
+preserving nonempty thinking and the final answer. An end-of-turn token
+and newline are appended to each accepted target. All target tokens are
+supervised, including thinking and the end-of-turn suffix; all prompt
+tokens are masked. Rejected targets are not replaced with action-token
+supervision.
+
+To detect degenerate outputs, training stops after two consecutive batches
+in which the median target length falls below 100 tokens or more than
+10\% of targets contain at most 10 tokens. No minimum-length filter
+is applied to individual retrospections.
+
+\subsection{Online optimization}
+\label{app:roft_loss_implementation}
+
+Each nominal update uses 64 source attempts and four retrospections
+per attempt, yielding up to
+256 targets before rejection. We make one optimization pass through
+the retained targets and do not replay earlier batches. Source groups
+are consumed in completion order. We discard groups that began generation
+with weights more than one update behind the current policy.
+Serving weights are refreshed after each optimizer update, so a
+multi-turn attempt and its subsequent retrospections need not use a
+single frozen policy snapshot.
+
+The objective in \cref{eq:ro} averages over all supervised
+tokens in the retained batch.
+We optimize all model parameters with AdamW, a constant learning rate
+of $10^{-6}$, and no warmup. The data gradient is scaled by a constant
+factor of four before norm clipping.
+Relative token weighting is unchanged.
+We use neither a reference-policy KL penalty nor an entropy bonus.
+Optimizer settings and generation hyperparameters are summarized in
+\cref{tab:roft_hyperparameters}.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Reference online training and generation hyperparameters for
+\methodabbr{}. Experiment-specific settings take precedence. Batch sizes
+are nominal; targets rejected during preprocessing incur no loss.}
+\label{tab:roft_hyperparameters}
+\begin{tabularx}{\linewidth}{@{}p{0.48\linewidth}X@{}}
+\toprule
+Hyperparameter & Value \\
+\midrule
+Initial model & Qwen3.5-4B \\
+Training tasks & 767 \\
+Optimizer updates & Specified per experiment \\
+Source attempts per update & 64 \\
+Solver attempts per task selection & 1 \\
+Retrospections per source & 4 \\
+Target batch / microbatch size & 256 / 1 \\
+Optimization passes per batch & 1; no replay \\
+Optimizer & AdamW \\
+Learning rate / schedule / warmup & $10^{-6}$ / constant / none \\
+Adam $(\beta_1,\beta_2)$ / $\epsilon$ & $(0.9,0.98)$ / $10^{-8}$ \\
+Weight decay / gradient-norm clip & 0.1 / 1.0 \\
+Loss reduction & Mean over retained target tokens \\
+Reference-KL / entropy coefficients & 0 / 0 \\
+Solver temperature / top-$p$ & 1.0 / 1.0 \\
+Retrospection temperature / top-$p$ & 0.9 / 1.0 \\
+Top-$k$ restriction & None \\
+Maximum solver turns & 100 \\
+Maximum generated tokens per solver turn & 8,192 \\
+Maximum generated tokens per retrospection & 8,192 \\
+Solver context / total response limit & 131,072 / 131,072 tokens \\
+Training sequence limit & 131,072 tokens \\
+Context compaction & Disabled \\
+Maximum policy lag at generation start & One update \\
+Training precision / gradient accumulation & BF16 / FP32 \\
+Attention / hidden dropout & 0 / 0 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Compute and checkpointing}
+
+We use eight NVIDIA B200 GPUs: four for training and four for
+generating solution attempts and retrospections. Training uses
+four-way context parallelism and accumulates gradients over the
+complete update.
+
+We save checkpoints every five successful optimizer updates and at the
+final update. Evaluated checkpoints are reported in
+\cref{app:generalization_efficiency,app:single_task_test_performance,app:ablations}.
+Held-out evaluations are conducted separately from the online training
+loop, with no stored retrospection or added reflection step in the
+solver context.

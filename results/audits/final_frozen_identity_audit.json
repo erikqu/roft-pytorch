@@ -1,0 +1,16 @@
+{
+  "at": 1791828190.4444714,
+  "verified": true,
+  "host_and_node_manifest_sha256": "a33632a18c46bf82cb238dbc2c70632f2cfa58b8d46b8a6d893f26fe6b8ada1d",
+  "host_input_files_checked": 6774,
+  "host_runtime_code_files_checked": 25,
+  "host_official_paper_assets_checked": 10,
+  "remote_current_byte_checks": {
+    "manifest_sha256": "a33632a18c46bf82cb238dbc2c70632f2cfa58b8d46b8a6d893f26fe6b8ada1d",
+    "inputs": 6774,
+    "code": 25,
+    "official": 10
+  },
+  "training_and_evaluation_ended": true,
+  "sampling_or_code_changed": false
+}

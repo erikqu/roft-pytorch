@@ -1,0 +1,11 @@
+{
+  "at": 1791827314.1627333,
+  "verified": true,
+  "observed_summation_roundoff": 1.734723475976807e-18,
+  "same_existing_mean_tolerance_applied_to_intervals": true,
+  "material_interval_error_rejected": true,
+  "nan_rejected": true,
+  "boolean_rejected": true,
+  "reported_numbers_changed": false,
+  "original_failure_preserved": "current_report_audit_before_roundoff_fix.json"
+}

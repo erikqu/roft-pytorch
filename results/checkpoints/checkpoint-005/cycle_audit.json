@@ -1,0 +1,12 @@
+{
+  "at": 1791802026.8944793,
+  "step": 5,
+  "verified": true,
+  "original_sources": 16,
+  "fresh_reflections": 64,
+  "supervised_tokens_selected": 37734,
+  "complete_raw_backup_verified": true,
+  "optimizer_update_verified_by_this_receipt": false,
+  "read_only_training": true,
+  "automatic_shutdown": false
+}

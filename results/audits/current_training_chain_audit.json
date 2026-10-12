@@ -1,0 +1,106 @@
+{
+  "scope": "full saved ROFT update chain currently present",
+  "steps": [
+    {
+      "step": 1,
+      "backward_tokens": 36749,
+      "cumulative_backward_tokens": 36749,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 64,
+      "boundary_target": [],
+      "checkpoint_identity": "2a64097eefcf78f559122ae5fd5774b76c3a66a8879e787bd7aa908539b6f561",
+      "source_checkpoint_identity": null,
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    },
+    {
+      "step": 2,
+      "backward_tokens": 37192,
+      "cumulative_backward_tokens": 73941,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 64,
+      "boundary_target": [],
+      "checkpoint_identity": "8e8254146f9920b80785ddf3f28a316b7532fc6af9e160c47d0aab2d469f8575",
+      "source_checkpoint_identity": "2a64097eefcf78f559122ae5fd5774b76c3a66a8879e787bd7aa908539b6f561",
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    },
+    {
+      "step": 3,
+      "backward_tokens": 37666,
+      "cumulative_backward_tokens": 111607,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 64,
+      "boundary_target": [],
+      "checkpoint_identity": "871c9fc9ea5ec7719c58c5d6405ca3041ebf2199d8de8467ac958e9e7c703ca2",
+      "source_checkpoint_identity": "8e8254146f9920b80785ddf3f28a316b7532fc6af9e160c47d0aab2d469f8575",
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    },
+    {
+      "step": 4,
+      "backward_tokens": 35891,
+      "cumulative_backward_tokens": 147498,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 64,
+      "boundary_target": [],
+      "checkpoint_identity": "20338e624d65337dd0a5aa4d55c6a0ad01352585aa7bf6f403d441261ae28cec",
+      "source_checkpoint_identity": "871c9fc9ea5ec7719c58c5d6405ca3041ebf2199d8de8467ac958e9e7c703ca2",
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    },
+    {
+      "step": 5,
+      "backward_tokens": 37734,
+      "cumulative_backward_tokens": 185232,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 64,
+      "boundary_target": [],
+      "checkpoint_identity": "12c7233db766162018ca3ac00b89b15d6386c4e25d626fb5b70fe0363e8c5d8d",
+      "source_checkpoint_identity": "20338e624d65337dd0a5aa4d55c6a0ad01352585aa7bf6f403d441261ae28cec",
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    },
+    {
+      "step": 6,
+      "backward_tokens": 39030,
+      "cumulative_backward_tokens": 224262,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 64,
+      "boundary_target": [],
+      "checkpoint_identity": "55c1b3deb25f5857383aa8166feb5bd12549b6be1907240725bafd17ab86b3e6",
+      "source_checkpoint_identity": "12c7233db766162018ca3ac00b89b15d6386c4e25d626fb5b70fe0363e8c5d8d",
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    },
+    {
+      "step": 7,
+      "backward_tokens": 32459,
+      "cumulative_backward_tokens": 256721,
+      "actual_changed_tensors": 723,
+      "fresh_source_attempts": 16,
+      "retained_target_count": 54,
+      "boundary_target": [
+        "roft-007-attempt-010-reflection-1"
+      ],
+      "checkpoint_identity": "7ecd90d508066a305f6083c27061ade3490b6f0ee505371e72187f8196d1e9cd",
+      "source_checkpoint_identity": "55c1b3deb25f5857383aa8166feb5bd12549b6be1907240725bafd17ab86b3e6",
+      "numerical_reload_verified": true,
+      "full_state": "not inspected in metadata-only audit"
+    }
+  ],
+  "backward_tokens": 256721,
+  "target_backward_tokens": 256721,
+  "training_complete_receipt": true,
+  "replayed_reflection_ids": false,
+  "problems": [],
+  "training_verified_complete": true,
+  "fresh_final_evaluation_complete": false,
+  "note": "This audit alone does not prove model quality, complete final backup, or entire goal completion."
+}

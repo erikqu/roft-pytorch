@@ -1,0 +1,22 @@
+{
+  "at": 1791829541.6420214,
+  "scope": "all locally backed-up raw-cycle files and full-run manifest when present",
+  "cycle_receipts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "full_run_manifest_present": true,
+  "files": 66896,
+  "direct_files_checked": 45827,
+  "compressed_files_checked": 21069,
+  "uncompressed_bytes_checked": 56270127629,
+  "problems": [],
+  "verified": true,
+  "read_only": true,
+  "entire_run_complete_claimed": true
+}

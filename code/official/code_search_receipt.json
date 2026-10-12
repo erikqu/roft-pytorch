@@ -1,0 +1,24 @@
+{
+  "at": 1791598668.6256645,
+  "official_roft_training_repository_found": false,
+  "searches": [
+    "GitHub repository search: ROFT retrospection, exact title, exact arXiv ID in README, retrospection-only in README, Microsoft organization",
+    "Author account repository checks: xingdi-eric-yuan and sordonia; unrelated JonathanLight identity excluded",
+    "Recursive tree checks of author-owned AReaL, PipelineRL and mini-swe-agent forks: no ROFT training implementation"
+  ],
+  "search_limitations": [
+    "Google returned HTTP429; Bing returned unrelated results and was not used as evidence",
+    "Search cannot prove no repository exists"
+  ],
+  "paper_release_statement": "We will release selected components of the training and evaluation code upon acceptance.",
+  "imported_assets": [
+    "failed_system.txt",
+    "experimental_setup.tex",
+    "2609.35741v1.src",
+    "2609.35741v1.pdf",
+    "paper_provenance.json",
+    "author_mini_swe_agent_default.py",
+    "author_scaffold_LICENSE.md"
+  ],
+  "implementation_provenance": "Any new local training implementation must be labelled paper-derived, not official author training code."
+}

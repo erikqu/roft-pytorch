@@ -1,0 +1,48 @@
+{
+  "checkpoint": "/ROFT_RUN/train/roft/checkpoint-003",
+  "step": 3,
+  "resume_sha256": "2d526f684d3d68828f8a3c8858596401db1a5da854ec2dd6ffaf6ee10b187a3b",
+  "saved_master_tensors": 723,
+  "saved_master_parameters": 4539265536,
+  "master_dtype": "FP32",
+  "adam_moment_tensors": 723,
+  "adam_step_counters": [
+    3
+  ],
+  "cpu_cuda_rng_valid": true,
+  "saved_adam_recipe": {
+    "lr": 1e-06,
+    "betas": [
+      0.9,
+      0.98
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.1,
+    "maximize": false,
+    "foreach": false
+  },
+  "serving_master_tensors_compared": 723,
+  "masters_with_precision_beyond_serving_export": 723,
+  "unrounded_master_examples": [
+    "model.language_model.layers.16.mlp.gate_proj.weight",
+    "model.language_model.layers.16.mlp.up_proj.weight",
+    "model.language_model.layers.16.post_attention_layernorm.weight",
+    "model.language_model.layers.17.input_layernorm.weight",
+    "model.language_model.layers.17.linear_attn.A_log"
+  ],
+  "base_serving_model": "/ROFT_MODEL",
+  "numerically_changed_serving_tensors_from_base": 546,
+  "serving_change_examples": [
+    "model.language_model.layers.16.mlp.gate_proj.weight",
+    "model.language_model.layers.16.mlp.up_proj.weight",
+    "model.language_model.layers.16.post_attention_layernorm.weight",
+    "model.language_model.layers.17.input_layernorm.weight",
+    "model.language_model.layers.17.linear_attn.conv1d.weight"
+  ],
+  "problems": [],
+  "verified": true,
+  "read_only": true,
+  "optimizer_update_performed": false,
+  "note": "This validates saved state. Actual subsequent optimizer continuity requires the next update audit.",
+  "audited_at": 1791793028.6882083
+}

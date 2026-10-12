@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "actual_native_tool_execution": true,
+  "actual_readable_blender_scene": true,
+  "fresh_thinking_reflection": true,
+  "sampled_prefix_exact": true,
+  "all_target_thinking_eot_supervised": true,
+  "reflection_target_tokens": 608
+}

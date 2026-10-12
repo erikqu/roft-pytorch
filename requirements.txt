@@ -1,0 +1,8 @@
+# Runtime versions recorded for the completed single-H100 experiment.
+# Requires compatible CUDA drivers and a Python 3.12 environment.
+torch==2.11.0
+transformers==5.18.0
+vllm==0.26.0
+Pillow
+safetensors
+PyYAML

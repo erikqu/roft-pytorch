@@ -1,0 +1,399 @@
+{
+  "source_manifest_sha256": "926da0471940aef2cecc85129e0776b4ef1c02c872c53495228e47cfb481fe8f",
+  "tasks": {
+    "blender-generated-acoustic-guitar-model": {
+      "source_split": "train",
+      "tree_sha256": "4e0136c97c03c20343ccb2a6601f0a435b3cb9c147250eaf18c9a7075cba45ad"
+    },
+    "blender-generated-apartment-dining-table-set-model": {
+      "source_split": "train",
+      "tree_sha256": "57b69db8cf4b769edd8ebf85014b9c714a9dbf5d2b8435fc44da81f2853b0595"
+    },
+    "blender-generated-astronaut-complete-standing-suit-model": {
+      "source_split": "train",
+      "tree_sha256": "4ef1e45fb4dd38f4a94510434c1621d2a55b9f975bc53bddc5a652c30e913cbe"
+    },
+    "blender-generated-bus-shelter-model": {
+      "source_split": "train",
+      "tree_sha256": "593d1d8fe478317a50624d1eafe8aaac81b76c43406567adecbbe3e0680dc50a"
+    },
+    "blender-generated-butter-dish-model": {
+      "source_split": "train",
+      "tree_sha256": "a06633e45ec5054b07b3950d093be28c6ca4aed56edf5d11c3df1c79320ea96b"
+    },
+    "blender-generated-camera-mirrorless-with-lens-model": {
+      "source_split": "train",
+      "tree_sha256": "db3ea18ad54429c78696dd279b5b4ebf070a2c33c9c36cf11b885cd1e1331c69"
+    },
+    "blender-generated-carousel-model": {
+      "source_split": "train",
+      "tree_sha256": "935330a7ecf323aa9151900b48757c7b0bd640a15aef633fc125b7289aad72f3"
+    },
+    "blender-generated-ceramic-vase-model": {
+      "source_split": "train",
+      "tree_sha256": "afa22bd2f48b29fa0fcb8df4226bd7561b3a821246a1a633cbc0c2348298df7a"
+    },
+    "blender-generated-clock-tower-model": {
+      "source_split": "train",
+      "tree_sha256": "2eaf36e1ba3f444ace8941ec7b336e1a7f435fdf9432229c490ec9a7a53c13a7"
+    },
+    "blender-generated-closed-book-model": {
+      "source_split": "train",
+      "tree_sha256": "1a166df68fae61b4db8d60f7aab950cfa0de06b37d1249e97ecb2738062e02fa"
+    },
+    "blender-generated-computer-mouse-wireless-model": {
+      "source_split": "train",
+      "tree_sha256": "31a6e4310db45fefd3c7f0ac7d0d3f212dac4ba4e60e1ccc5d4c595d4e1a1cf7"
+    },
+    "blender-generated-cowboy-character-model": {
+      "source_split": "train",
+      "tree_sha256": "7b8bfb0188293e1823ad54f93231e981f01671306726a65f5303308234e36c9e"
+    },
+    "blender-generated-cutting-board-model": {
+      "source_split": "train",
+      "tree_sha256": "ffaf54c3e907f3a893d8061d3862497c41cd8aa3c798c2dd1f29c63170dd75f5"
+    },
+    "blender-generated-desk-fan-model": {
+      "source_split": "train",
+      "tree_sha256": "431a19aac41313c02e72b5e4bbff32155e2deeaa93ddb8d2d699dda51a321e24"
+    },
+    "blender-generated-desk-lamp-model": {
+      "source_split": "train",
+      "tree_sha256": "244a60249652fee55745444ed77cea4d5185daf9f7f39569b8ba6217d3c9a85f"
+    },
+    "blender-generated-dishwasher-open-door-and-racks-model": {
+      "source_split": "train",
+      "tree_sha256": "f9cd7b7a2b976444206fedbb9b2d9e3b9f1348889234266a2ab9501ad91eb8e9"
+    },
+    "blender-generated-dog-standing-labrador-model": {
+      "source_split": "train",
+      "tree_sha256": "2ead9e69567458bc22625cd06c525669ffdbcbb02522e200b45c9d021822fd11"
+    },
+    "blender-generated-doorstop-model": {
+      "source_split": "train",
+      "tree_sha256": "bc6c3a04397c0081849fdfd574930498a691b092067baf94600b76c1c42a1638"
+    },
+    "blender-generated-drinking-glass-model": {
+      "source_split": "train",
+      "tree_sha256": "5719ead6753d28af7320e006e8e01daf15f1d8b762e3227ca6f3b576e3b4ff5f"
+    },
+    "blender-generated-dumbbell-model": {
+      "source_split": "train",
+      "tree_sha256": "7d2bfc22ddd6b77f4b8322542f1d9fe148be0e637f4e7eda7f45d3e7483cc1c8"
+    },
+    "blender-generated-dustpan-model": {
+      "source_split": "train",
+      "tree_sha256": "45bab8b8cca6e39905139a58e62d273559d98c6c323c5a4d147af4d030569cca"
+    },
+    "blender-generated-fictional-face-soft-features-model": {
+      "source_split": "train",
+      "tree_sha256": "b0b88f074d432f0fe7637b9b41ecaa6006681e5de991ed57abc50ea4dd4169e3"
+    },
+    "blender-generated-fire-engine-model": {
+      "source_split": "train",
+      "tree_sha256": "fe2188044e860c4d2f74bcc7c29be6968246275a2b6082b1fdbbbf89d24b897d"
+    },
+    "blender-generated-flower-pot-model": {
+      "source_split": "train",
+      "tree_sha256": "961a1f8daa9cfa4774dacd05a806b5ec3270cd68036e331e363414da07c5bc75"
+    },
+    "blender-generated-fork-four-tines-model": {
+      "source_split": "train",
+      "tree_sha256": "dda7b0470970c469effa567937b6bc7d2dd44a28d7ce1140dfa8f599a8e20085"
+    },
+    "blender-generated-foundry-crucible-gantry-model": {
+      "source_split": "train",
+      "tree_sha256": "97167b01dd789e6cc907e234a49431d736ae170f357e96026032b06af7a3e5c5"
+    },
+    "blender-generated-fruit-basket-model": {
+      "source_split": "train",
+      "tree_sha256": "797e7540e3c9a2e67e68fa34f63ba8356b585aa73d00681f6e7fd72516511f78"
+    },
+    "blender-generated-golden-gate-bridge-complete-suspension-bridge-model": {
+      "source_split": "train",
+      "tree_sha256": "c77601a0baea17ece0f1fff27ba882299c9b5970ce0d3674a576400dd89a60b9"
+    },
+    "blender-generated-heart-anatomical-external-model-model": {
+      "source_split": "train",
+      "tree_sha256": "33d8a509b5da4b317de04c9f3bdbc7814b10dcbafcc56e7b481f6d92a20d9ee1"
+    },
+    "blender-generated-home-office-workstation-set-model": {
+      "source_split": "train",
+      "tree_sha256": "ff0cf0777f13dc09f96c66c5eb5d95b16577b414494362659adf5a36dce338af"
+    },
+    "blender-generated-keyboard-full-size-model": {
+      "source_split": "train",
+      "tree_sha256": "c36161cc515f0fc207e2ec5ade121e4621bc313dcc2b835f988279db0d804bf7"
+    },
+    "blender-generated-kitchen-l-shaped-open-room-model": {
+      "source_split": "train",
+      "tree_sha256": "601e061a7a73c6d7b81a11ca3d32070b4aded9397c7904305d58653a197c4cef"
+    },
+    "blender-generated-kitchen-open-room-setup-model": {
+      "source_split": "train",
+      "tree_sha256": "e47dac6a71f647c9066a8eedecbe3e10577f4d0998fd58a96e9ae1867455c3cb"
+    },
+    "blender-generated-lighthouse-model": {
+      "source_split": "train",
+      "tree_sha256": "5c3619d6e082f5b1dcffef906315526f303ee9911416c7016eb60be46fa4fa4d"
+    },
+    "blender-generated-living-room-open-room-setup-model": {
+      "source_split": "train",
+      "tree_sha256": "7d6c7ff55c19c462a0690f2f555e5d5820e2aa5b91e387cc7575cb14d4b189fe"
+    },
+    "blender-generated-mailbox-model": {
+      "source_split": "train",
+      "tree_sha256": "bbae43af87fdc6c11caca89360f76d60360eee607527d74f3287296d725e6b64"
+    },
+    "blender-generated-mammoth-standing-model": {
+      "source_split": "train",
+      "tree_sha256": "c842992f8c539e74fb73629fde293dc8207316940731c8911bb26cfed509ef25"
+    },
+    "blender-generated-microwave-oven-model": {
+      "source_split": "train",
+      "tree_sha256": "e8b03ff81671a076b02345c63016c56f24e035385c222b0da94e1d9e251433cf"
+    },
+    "blender-generated-mid-century-lounge-chair-model": {
+      "source_split": "train",
+      "tree_sha256": "eeb1181626b1e5da0f10c5e5d674887c886370674d869467d639868461b673cc"
+    },
+    "blender-generated-mixing-bowl-model": {
+      "source_split": "train",
+      "tree_sha256": "85378e6af22260843dbd07208fc0bb36f1088aa3088a52136063f0cf9406a8ca"
+    },
+    "blender-generated-motorcycle-road-bike-model": {
+      "source_split": "train",
+      "tree_sha256": "adbaa18c07c6bd1a8ea3b9d1185cb33de9a3c39ff5f3151d0d0777ea7f8ccc1b"
+    },
+    "blender-generated-pagoda-model": {
+      "source_split": "train",
+      "tree_sha256": "818ad688eb069c08d632b0c7bd3ba6f7c1dcf69214dd3f32749f0a189fe58fdf"
+    },
+    "blender-generated-pencil-hexagonal-with-eraser-model": {
+      "source_split": "train",
+      "tree_sha256": "f1c7b766b7f1cbed85b96e07684badb1a519ff27001b8387e761f56b1f7cd963"
+    },
+    "blender-generated-picture-frame-model": {
+      "source_split": "train",
+      "tree_sha256": "d95caebc8a7ca6a94da12749ca36c722c8a8e532997f8f1b54a03bb8606a3f3a"
+    },
+    "blender-generated-right-foot-flat-resting-pose-model": {
+      "source_split": "train",
+      "tree_sha256": "dc142f94812eda0eaf06e27a7b4e869e88ac4082b6760657c062e31eedfa98de"
+    },
+    "blender-generated-right-hand-open-palm-model": {
+      "source_split": "train",
+      "tree_sha256": "c93010f859b55942c10b770006b36db75a3483be9b0fc8ef6b0852ce6e4ef6d8"
+    },
+    "blender-generated-rubber-mallet-model": {
+      "source_split": "train",
+      "tree_sha256": "25456462422700942d7ffe6906be6f90f8f9a5cd030d51bb2af2a2e1894d1f05"
+    },
+    "blender-generated-saber-tooth-tiger-standing-smilodon-model": {
+      "source_split": "train",
+      "tree_sha256": "6d1816ea90ccb0f6ee4f53b7a6b40b652a9fd637c70bedc5185ee0540dbc5c6b"
+    },
+    "blender-generated-sewing-machine-model": {
+      "source_split": "train",
+      "tree_sha256": "ecf781e20c1986db9964d0ffadb904190d8a0097e7d94d75223a5a5d4862e47a"
+    },
+    "blender-generated-skyscraper-exposed-platforms-and-pillars-model": {
+      "source_split": "train",
+      "tree_sha256": "f5ecf0ae7499b4286d62bd31674743641ed3ce9583235a06edefa7fdd3227342"
+    },
+    "blender-generated-soap-dish-model": {
+      "source_split": "train",
+      "tree_sha256": "453400351ab607859303fb34c1c6a54396952a35df87a2645a9bd881b20ef9d5"
+    },
+    "blender-generated-sports-car-model": {
+      "source_split": "train",
+      "tree_sha256": "0b086aefbd8518d10c5f689f85c1f5155a3876ff0f0191b4acd9aea93290ba3a"
+    },
+    "blender-generated-steam-locomotive-model": {
+      "source_split": "train",
+      "tree_sha256": "853d67504787c4d8f36e0f1af3255dd67accb58013f3ba6d6320a8e6737861c8"
+    },
+    "blender-generated-steel-pedestrian-footbridge-model": {
+      "source_split": "train",
+      "tree_sha256": "c649c574b8f188a935681436f54051d5eed598cfe02375ff4499ab1c72680edb"
+    },
+    "blender-generated-step-ladder-model": {
+      "source_split": "train",
+      "tree_sha256": "ff682e1a93a27a74d041341f194515593a457d94775302ace6954213c8f7e14f"
+    },
+    "blender-generated-stone-aqueduct-model": {
+      "source_split": "train",
+      "tree_sha256": "5233b635e03d9821d6fbfc9a6f7c624bb410baef6e668b3c36ae372252a3f6e2"
+    },
+    "blender-generated-storage-canister-model": {
+      "source_split": "train",
+      "tree_sha256": "04c1c1993fadb71560ab489b40618bdba40ff3226d2b4cf082aa03666e9906ec"
+    },
+    "blender-generated-suburban-ranch-house-complete-exterior-model": {
+      "source_split": "train",
+      "tree_sha256": "5135cd48c4f56a34f9e2f07faf8df59027f6f7b6da75f4f3be6b8f08aa15ec00"
+    },
+    "blender-generated-suitcase-model": {
+      "source_split": "train",
+      "tree_sha256": "710cecd711c35fb3d964ce20c640df37fa59f8e5db763267d7d358d0816c2dce"
+    },
+    "blender-generated-tea-kettle-model": {
+      "source_split": "train",
+      "tree_sha256": "049522cd7fcb71d6e33da8b2d4d61a41fc7aecca11c4a7ca45b85d45f0ecb0f5"
+    },
+    "blender-generated-tidal-cartography-orrery-model": {
+      "source_split": "train",
+      "tree_sha256": "2d1be8806cb1334f0350d7830ccabe6828bfd5b8271a40bffd4af55839a01aef"
+    },
+    "blender-generated-tiered-fountain-model": {
+      "source_split": "train",
+      "tree_sha256": "d901fc735a73499859e510ac9fdf564cb1ec9b95e217d7445f661d55837b2193"
+    },
+    "blender-generated-times-square-open-urban-intersection-model": {
+      "source_split": "train",
+      "tree_sha256": "846b3137aea2e4d22a091aa3c46558058e5a42963ffc05d70c015fe0559cac53"
+    },
+    "blender-generated-toaster-model": {
+      "source_split": "train",
+      "tree_sha256": "5f4d9a44f7175d1f4cb1a0ee7d4239eedf24dca19cb0f9da0d4e493a0c56c2ea"
+    },
+    "blender-generated-tv-remote-button-layout-model": {
+      "source_split": "train",
+      "tree_sha256": "9b655d614c01fefe76459b930bf2013aac1064f54dea2530d7fe7ca5acfd7371"
+    },
+    "blender-generated-urban-delivery-van-model": {
+      "source_split": "train",
+      "tree_sha256": "71e884fe852ba239a2fa22c6b48adec4b03306c37c1f23e70140d3c006d0244f"
+    },
+    "blender-generated-urban-riverbank-trail-model": {
+      "source_split": "train",
+      "tree_sha256": "68e89f69754474a841aceac5c6036d60b750360b590e79519cc2db122b29d549"
+    },
+    "blender-generated-wall-clock-model": {
+      "source_split": "train",
+      "tree_sha256": "e4bbe385244a0527f1319826723fadb603332609c66ca655983397b71cc0f699"
+    },
+    "blender-generated-watering-can-model": {
+      "source_split": "train",
+      "tree_sha256": "d6508a77e7fac03561accb439754689b45a57c7173ff6f93833f9f8992945b10"
+    },
+    "blender-generated-white-house-complete-exterior-model": {
+      "source_split": "train",
+      "tree_sha256": "fa05ee462fdd8a0d09d94e5bf72d4d91335f9b704c29d4459461fe62da3d9d86"
+    },
+    "blender-generated-windmill-model": {
+      "source_split": "train",
+      "tree_sha256": "61c8ae131477a9bf6c4d8a7270eb5c8472f7a13ec7b501a4f0e3feccebbbb1d2"
+    },
+    "blender-generated-wooden-stool-model": {
+      "source_split": "train",
+      "tree_sha256": "92e583499cacff72f607e88380b39b98f4687cd08d02b824bc8080d99233f447"
+    },
+    "blender-generated-fictional-face-angular-features-model": {
+      "source_split": "train",
+      "tree_sha256": "6b90495b65b9b9b819db0921979d01bb2209bd220e053a410d88dd88d6750211"
+    },
+    "blender-generated-left-hand-relaxed-fingers-model": {
+      "source_split": "train",
+      "tree_sha256": "21a2a2939d9f2704e4802703ca8d88414ea493133cbc81677e42002be7df6181"
+    },
+    "blender-generated-left-foot-raised-heel-pose-model": {
+      "source_split": "train",
+      "tree_sha256": "872658f3e7ba7f35af2a36680869853cc69b6beedf218f38a4247d17ee73000c"
+    },
+    "blender-generated-gazebo-model": {
+      "source_split": "evaluation",
+      "tree_sha256": "114c157dd0264aa210d775a79f910dd97ef46585b1d724695bbca85ce97bf27e"
+    },
+    "blender-generated-greenhouse-model": {
+      "source_split": "evaluation",
+      "tree_sha256": "b96c2003f30f22bafa95b6f0d8955dcd6da137c03257e82c9231ff74eb8e8e99"
+    },
+    "blender-generated-stone-gatehouse-model": {
+      "source_split": "evaluation",
+      "tree_sha256": "bd6126fad1b28471b4619aa24b3c0380d15bf549c1ac0e7f0da5fe9374827456"
+    }
+  },
+  "train": [
+    "blender-generated-acoustic-guitar-model",
+    "blender-generated-apartment-dining-table-set-model",
+    "blender-generated-astronaut-complete-standing-suit-model",
+    "blender-generated-bus-shelter-model",
+    "blender-generated-butter-dish-model",
+    "blender-generated-camera-mirrorless-with-lens-model",
+    "blender-generated-carousel-model",
+    "blender-generated-ceramic-vase-model",
+    "blender-generated-clock-tower-model",
+    "blender-generated-closed-book-model",
+    "blender-generated-computer-mouse-wireless-model",
+    "blender-generated-cowboy-character-model",
+    "blender-generated-cutting-board-model",
+    "blender-generated-desk-fan-model",
+    "blender-generated-desk-lamp-model",
+    "blender-generated-dishwasher-open-door-and-racks-model",
+    "blender-generated-dog-standing-labrador-model",
+    "blender-generated-doorstop-model",
+    "blender-generated-drinking-glass-model",
+    "blender-generated-dumbbell-model",
+    "blender-generated-dustpan-model",
+    "blender-generated-fictional-face-soft-features-model",
+    "blender-generated-fire-engine-model",
+    "blender-generated-flower-pot-model",
+    "blender-generated-fork-four-tines-model",
+    "blender-generated-foundry-crucible-gantry-model",
+    "blender-generated-fruit-basket-model",
+    "blender-generated-golden-gate-bridge-complete-suspension-bridge-model",
+    "blender-generated-heart-anatomical-external-model-model",
+    "blender-generated-home-office-workstation-set-model",
+    "blender-generated-keyboard-full-size-model",
+    "blender-generated-kitchen-l-shaped-open-room-model",
+    "blender-generated-kitchen-open-room-setup-model",
+    "blender-generated-lighthouse-model",
+    "blender-generated-living-room-open-room-setup-model",
+    "blender-generated-mailbox-model",
+    "blender-generated-mammoth-standing-model",
+    "blender-generated-microwave-oven-model",
+    "blender-generated-mid-century-lounge-chair-model",
+    "blender-generated-mixing-bowl-model",
+    "blender-generated-motorcycle-road-bike-model",
+    "blender-generated-pagoda-model",
+    "blender-generated-pencil-hexagonal-with-eraser-model",
+    "blender-generated-picture-frame-model",
+    "blender-generated-right-foot-flat-resting-pose-model",
+    "blender-generated-right-hand-open-palm-model",
+    "blender-generated-rubber-mallet-model",
+    "blender-generated-saber-tooth-tiger-standing-smilodon-model",
+    "blender-generated-sewing-machine-model",
+    "blender-generated-skyscraper-exposed-platforms-and-pillars-model",
+    "blender-generated-soap-dish-model",
+    "blender-generated-sports-car-model",
+    "blender-generated-steam-locomotive-model",
+    "blender-generated-steel-pedestrian-footbridge-model",
+    "blender-generated-step-ladder-model",
+    "blender-generated-stone-aqueduct-model",
+    "blender-generated-storage-canister-model",
+    "blender-generated-suburban-ranch-house-complete-exterior-model",
+    "blender-generated-suitcase-model",
+    "blender-generated-tea-kettle-model",
+    "blender-generated-tidal-cartography-orrery-model",
+    "blender-generated-tiered-fountain-model",
+    "blender-generated-times-square-open-urban-intersection-model",
+    "blender-generated-toaster-model",
+    "blender-generated-tv-remote-button-layout-model",
+    "blender-generated-urban-delivery-van-model",
+    "blender-generated-urban-riverbank-trail-model",
+    "blender-generated-wall-clock-model",
+    "blender-generated-watering-can-model",
+    "blender-generated-white-house-complete-exterior-model",
+    "blender-generated-windmill-model",
+    "blender-generated-wooden-stool-model"
+  ],
+  "transfer": [
+    "blender-generated-fictional-face-angular-features-model",
+    "blender-generated-left-hand-relaxed-fingers-model",
+    "blender-generated-left-foot-raised-heel-pose-model",
+    "blender-generated-gazebo-model",
+    "blender-generated-greenhouse-model",
+    "blender-generated-stone-gatehouse-model"
+  ]
+}

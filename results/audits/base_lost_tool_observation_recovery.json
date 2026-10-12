@@ -1,0 +1,27 @@
+{
+  "at": 1791826208.8024907,
+  "id": "evaluation-base-blender-generated-white-house-complete-exterior-model-seed-71/turn-056",
+  "raw_file": "evaluation-base-blender-generated-white-house-complete-exterior-model-seed-71-056.json",
+  "raw_sha256": "e1ed86ef3afda74c83e3b22060e47e02a02f57186b71c412014ae39cf63a4596",
+  "ordinal": 0,
+  "action_reexecuted": false,
+  "processes_at_recovery": "REDACTED",
+  "observation": {
+    "tool": "bash",
+    "exit_code": null,
+    "stdout": null,
+    "stderr": null,
+    "python_traceback_observed": null,
+    "observation_status": "lost_during_supervisor_interruption",
+    "note": "The supervisor interrupted observation capture for the preceding command. Its exit status, stdout and stderr are unknown. The command was not repeated. These file facts are from read-only recovery inspection and do not establish successful Blender execution.",
+    "observed_file_facts": {
+      "script_path": "/app/build_wh.py",
+      "script_sha256": "bb0fa7c6af89837e96bd278f8a0445eae8bf00d387410a48e7c8a67485299473",
+      "script_matches_sampled_command": true,
+      "result_blend_exists": true,
+      "result_blend_sha256": "7afbc7713ab88e93d3b2fdd96a60f556a0aaeccc2e30e476ef1bbb528fc7ddc5"
+    }
+  },
+  "verified_existing_script_bytes": true,
+  "missing_original_output_explicit": true
+}

@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "injected_vanished_file_failure": true,
+  "worker_killed": false,
+  "retry_reached_completed_fixture": true,
+  "live_run_used": false,
+  "sync_calls": 3
+}

@@ -1,0 +1,74 @@
+{
+  "scope": "all persisted native backward receipts reconciled with actual target IDs and saved update audits",
+  "steps": [
+    {
+      "step": 1,
+      "completed_backwards": 64,
+      "selected_targets": 64,
+      "actual_backward_tokens": 36749,
+      "selected_backward_tokens": 36749,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.9349397188052535
+    },
+    {
+      "step": 2,
+      "completed_backwards": 64,
+      "selected_targets": 64,
+      "actual_backward_tokens": 37192,
+      "selected_backward_tokens": 37192,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.9070664625614882
+    },
+    {
+      "step": 3,
+      "completed_backwards": 64,
+      "selected_targets": 64,
+      "actual_backward_tokens": 37666,
+      "selected_backward_tokens": 37666,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.8478922890499234
+    },
+    {
+      "step": 4,
+      "completed_backwards": 64,
+      "selected_targets": 64,
+      "actual_backward_tokens": 35891,
+      "selected_backward_tokens": 35891,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.8254553563892841
+    },
+    {
+      "step": 5,
+      "completed_backwards": 64,
+      "selected_targets": 64,
+      "actual_backward_tokens": 37734,
+      "selected_backward_tokens": 37734,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.7827437524683774
+    },
+    {
+      "step": 6,
+      "completed_backwards": 64,
+      "selected_targets": 64,
+      "actual_backward_tokens": 39030,
+      "selected_backward_tokens": 39030,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.6735154814086854
+    },
+    {
+      "step": 7,
+      "completed_backwards": 54,
+      "selected_targets": 54,
+      "actual_backward_tokens": 32459,
+      "selected_backward_tokens": 32459,
+      "saved_numerical_update": true,
+      "actual_loss_contribution_sum": 0.630087754689157
+    }
+  ],
+  "saved_backward_tokens": 256721,
+  "pending_backward_tokens": 0,
+  "problems": [],
+  "verified": true,
+  "read_only": true,
+  "note": "An unfinished update remains pending; this audit alone does not prove gradients, optimizer states or final quality."
+}

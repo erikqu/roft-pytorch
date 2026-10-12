@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "sequence_tokens": 131072,
+  "actual_full_model_backward": true,
+  "diagnostic_backward_tokens": 16,
+  "optimizer_updates": 0,
+  "native_leaf_gradient_dtype": "float32",
+  "gradient_norm": 23.835257938090596,
+  "gradient_tensors": 723,
+  "seconds": 71.59117829601746,
+  "peak_gpu_bytes": 79070877184,
+  "not_counted_toward_training_budget": true
+}
